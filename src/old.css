@@ -1,0 +1,330 @@
+body{
+    background-color: #a2ccfe;
+  }
+
+* {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+  }
+  
+  .wrapper {
+    display: flex;
+    margin: 1rem;
+    flex-direction: row;
+  }
+  
+  .add_input,
+  select {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  select {
+    width: 100% !important;
+  }
+  
+  .input,
+  select {
+    width: 100%; /* Adjusted width */
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .logo-container {
+    flex: 1;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./logo.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Query for Small Screens */
+  @media screen and (max-width: 600px) {
+    .wrapper {
+      flex-direction: column;
+    }
+  
+    .add_input,
+    select {
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  }
+  
+  .container {
+    margin-top: 2rem;
+  }
+  
+
+* {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  .terms{
+    text-indent: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .wrapper {
+    display: flex;
+    margin: 1rem;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px 8px rgba(0, 0, 0, 0.07);
+  }
+  
+  .add_input,
+  select {
+    flex: 1;
+    padding: 1.5rem;
+    border-radius: 1px 0 0 1px;
+    
+  }
+  .input:focus,
+  select:focus{
+    outline: none;
+  }
+  select {
+    width: 100% !important;
+  }
+  
+  .input,
+  select {
+    width: 100%; /* Adjusted width */
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .logo-container {
+    flex: 1;
+    text-align: center;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./logo_2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+  }
+  
+  /* Media Query for Small Screens */
+  @media screen and (max-width: 600px) {
+    .wrapper {
+      flex-direction: column;
+    }
+  
+    .add_input,
+    select {
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  }
+  
+  .container {
+    margin-top: 2rem;
+  }
+  
+  .container2 {
+    max-width: 100%;
+    aspect-ratio: 1;
+    margin: 0 auto;
+    color: black;
+    padding: 20px;
+    margin-top: 3rem;
+    overflow: hidden;
+   }
+   
+   .heading {
+    text-align: center;
+    margin-bottom: 20px;
+   }
+   
+   .table {
+    width: 100%;
+    border-collapse: collapse;
+   }
+   
+   .table th,
+   .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+   }
+   
+   
+   .item-name {
+    margin-right: 5px;
+   }
+   
+   .details {
+    list-style-type: none;
+    padding: 0;
+   }
+   
+   .detail {
+    margin-bottom: 5px;
+   }
+   
+   .detail-label {
+    font-weight: bold;
+   }
+   
+   .key-values {
+    list-style-type: none;
+    padding: 0;
+   }
+   
+   .detail-value {
+    display: inline;
+   }
+   
+   .loading {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+   }
+   .terms-text{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: justify;
+    width: 450px;
+    color: white;
+}
+.terms-ctn{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    margin-top: 1rem;
+}
+.terms-btn{
+    width: 450px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 10px;
+    background-color: white; /* Default white background */
+    z-index: 1000; /* Ensures the navbar appears above other content */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+  }
+  
+  /* .dark-mode .navbar {
+    background-color: #111; /* Dark background for dark mode 
+  } */
+  .dark-mode .navbar{
+    background-color: transparent;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  }
+  .nav-link {
+    color: black; /* Default text color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 10px; /* Reduced margin between links */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .nav-link:hover {
+    background-color: #eee; /* Light background on hover */
+  }
+  .size {
+    scale: 1.5;
+    background-color: transparent !important;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .nav-link,
+    .dark-mode-button {
+      margin: auto;
+    }
+  
+    .nav-link:nth-child(1) {
+      margin-left: auto;
+    }
+  }
+  

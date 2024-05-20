@@ -1,0 +1,58 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 10px;
+  background-color: white; /* Default white background */
+  z-index: 1000; /* Ensures the navbar appears above other content */
+  transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+/* .dark-mode .navbar {
+  background-color: #111; /* Dark background for dark mode 
+} */
+.dark-mode .navbar{
+  background-color: transparent;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.nav-link {
+  color: black; /* Default text color */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 10px; /* Reduced margin between links */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background-color: #eee; /* Light background on hover */
+}
+
+
+
+.size {
+  scale: 1.5;
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-link,
+  .dark-mode-button {
+    margin: auto;
+  }
+
+  .nav-link:nth-child(1) {
+    margin-left: auto;
+  }
+}

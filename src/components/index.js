@@ -1,0 +1,6 @@
+export {default as Terms} from './terms/terms.jsx'
+export {default as Map} from './map/map'
+export {default as Nav} from './navbar/navbar'
+export {default as Doner} from './doner/doner'
+export {default as User} from './user/user'
+export {default as DB} from './database/database'

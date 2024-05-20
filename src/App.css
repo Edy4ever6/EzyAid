@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --bg-color: #a2ccfe;
+  --bg-color2: #fff;
+}
+
+body {
+  background: var(--bg-color2);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.add_input,
+.select {
+  @apply flex-1 p-6;
+}
+.container{
+  @apply flex w-full justify-center items-center m-auto flex-col gap-4 h-screen;
+}
+.wrapper{
+  @apply flex m-[1rem] font-bold shadow-perfect;
+}
+.input:focus,
+.select:focus {
+  @apply outline-none bg-white;
+}
+
+.select {
+  @apply w-full !important;
+}
+
+.input,
+.select {
+  @apply outline-none w-full mb-2 p-4 border-[1px] border-black bg-blue-50 text-base font-bold;
+}
+.button{
+  @apply w-full p-4 font-bold text-base bg-blue-500 text-white mb-2 border-none  cursor-pointer transition duration-300 ease-in-out;
+}
+.button:hover {
+  @apply bg-blue-700;
+}
+
+.logo-container {
+  @apply text-center bg-transparent flex-1 bg-contain bg-center bg-no-repeat;
+  background-image: url('./logo_2.png');
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    @apply flex-col;
+  }
+
+  .add_input,
+  .select {
+    @apply p-4;
+  }
+}
+
+.container {
+  @apply mt-8;
+}
+
+.terms-text {
+  @apply text-base font-bold text-justify w-[550px] text-white;
+}
+
+.terms-ctn {
+  @apply flex h-screen w-full justify-center items-center flex-col bg-black;
+}
+
+.container2 {
+  @apply max-w-full mx-auto text-black p-20 mt-16 overflow-hidden;
+}
+
+.heading {
+  @apply text-center mb-10;
+}
+
+.table {
+  @apply w-full border-collapse;
+}
+
+.table th,
+.table td {
+  @apply p-4 text-left border-b border-gray-300;
+}
+
+.item-name {
+  @apply mr-2;
+}
+
+.details {
+  @apply list-none p-0;
+}
+
+.detail {
+  @apply mb-2;
+}
+
+.detail-label {
+  @apply font-bold;
+}
+
+.key-values {
+  @apply list-none p-0;
+}
+
+.detail-value {
+  @apply inline;
+}
+
+.loading {
+  @apply text-center text-3xl mt-16;
+}
